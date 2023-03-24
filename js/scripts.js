@@ -4,6 +4,13 @@ function handleRadio(event)  {
   event.preventDefault();
   const radioSelection = document.querySelector("input[name='use']:checked").value;
   console.log(radioSelection);
+  if (radioSelection === "school")  {
+    console.log("Python desc");
+  } else if (radioSelection === "projects") {
+    console.log("JavaScript desc");
+  }  else if (radioSelection === "career") {
+      console.log("C# desc");
+  }
 }
 function handleText(event) {
   event.preventDefault();
