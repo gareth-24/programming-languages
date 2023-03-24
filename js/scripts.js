@@ -3,6 +3,7 @@ function hideResults() {
   document.getElementById("python").setAttribute("class", "hidden");
   document.getElementById("javascript").setAttribute("class", "hidden");
   document.getElementById("c").setAttribute("class", "hidden");
+  document.getElementById("general-resources").setAttribute("class", "hidden");
 }
 function handleRadio(event)  {
   event.preventDefault();
