@@ -12,6 +12,11 @@ function handleText(event) {
   console.log(userName);
   console.log(userEmail);
 }
+function handlePronouns(event)  {
+  event.preventDefault();
+  const pronouns = document.getElementById("pronouns").value;
+  console.log(pronouns);
+}
 function handleAge(event) {
   event.preventDefault();
   const dob = document.getElementById("born").value;
@@ -23,4 +28,5 @@ window.addEventListener("load", function()  {
   document.getElementById("user-form").addEventListener("submit", handleRadio);
   document.getElementById("user-form").addEventListener("submit", handleText);
   document.getElementById("user-form").addEventListener("submit", handleAge);
+  document.getElementById("user-form").addEventListener("submit", handlePronouns);
 });
