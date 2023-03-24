@@ -7,22 +7,22 @@
 </head>
 <body>
   <h1>Complete the survey to discover which language is best for you!</h1>
-  <form>
+  <form id="user-form">
     <label for="Input">Name</label>
     <input id="Input" type="text" name="Input">
     <br>
     <div class="radio-input">
       <p>What is your use for the programming language?</p>
       <label>
-        <input type="radio" name="use" value="school">
+        <input type="radio" name="use" value="school" id="school" checked>
         For school
       </label>
       <label>
-        <input type="radio" name="use" value="projects">
+        <input type="radio" name="use" value="projects" id="projects">
         For personal projects
       </label>
       <label>
-        <input type="radio" name="use" value="career">
+        <input type="radio" name="use" value="career" id="career">
         To start a career in tech
       </label>
     </div>
