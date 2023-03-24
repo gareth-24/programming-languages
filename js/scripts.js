@@ -4,8 +4,10 @@ function handleRadio(event)  {
   event.preventDefault();
   const radioSelection = document.querySelector("input[name='use']:checked").value;
   console.log(radioSelection);
+
   if (radioSelection === "school")  {
     console.log("Python desc");
+
   } else if (radioSelection === "projects") {
     console.log("JavaScript desc");
   }  else if (radioSelection === "career") {
@@ -18,6 +20,10 @@ function handleText(event) {
   const userEmail = document.getElementById("Input2").value;
   console.log(userName);
   console.log(userEmail);
+
+  let greeting = document.getElementById("greeting");
+  greeting.removeAttribute("class");
+  document.getElementById("name-output").innerText = userName;
 }
 function handlePronouns(event)  {
   event.preventDefault();
