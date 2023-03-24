@@ -4,10 +4,15 @@ img {
 }
 body {
   font-family: sans-serif;
-}
-form {
-  line-height: 150%;
+  margin: 30px;
+  line-height: 1.5;
+  background-color: beige;
 }
 .hidden {
   display: none;
+}
+.card {
+  background-color: azure;
+  padding: 10px;
+  margin-right: 30%;
 }
