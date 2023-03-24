@@ -7,11 +7,16 @@ function handleRadio(event)  {
 
   if (radioSelection === "school")  {
     console.log("Python desc");
-
+    let python = document.getElementById("python");
+    python.removeAttribute("class");
   } else if (radioSelection === "projects") {
     console.log("JavaScript desc");
-  }  else if (radioSelection === "career") {
-      console.log("C# desc");
+    let javascript = document.getElementById("javascript");
+    javascript.removeAttribute("class");
+  } else if (radioSelection === "career") {
+    console.log("C# desc");
+    let c = document.getElementById("c");
+    c.removeAttribute("class");
   }
 }
 function handleText(event) {
