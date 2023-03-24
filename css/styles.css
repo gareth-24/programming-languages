@@ -1,3 +1,13 @@
+img {
+  width: 300px;
+  margin-top: 20px;
+}
+body {
+  font-family: sans-serif;
+}
+form {
+  line-height: 150%;
+}
 .hidden {
   display: none;
 }
