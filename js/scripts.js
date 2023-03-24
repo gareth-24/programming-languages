@@ -1,7 +1,12 @@
 // UI Logic
-
+function hideResults() {
+  document.getElementById("python").setAttribute("class", "hidden");
+  document.getElementById("javascript").setAttribute("class", "hidden");
+  document.getElementById("c").setAttribute("class", "hidden");
+}
 function handleRadio(event)  {
   event.preventDefault();
+  hideResults();
   const radioSelection = document.querySelector("input[name='use']:checked").value;
   console.log(radioSelection);
 
