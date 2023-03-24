@@ -10,8 +10,31 @@
   <form>
     <label for="Input">Name</label>
     <input id="Input" type="text" name="Input">
+    <br>
+    <div class="radio-input">
+      <p>What is your use for the programming language?</p>
+      <label>
+        <input type="radio" name="use" value="school">
+        For school
+      </label>
+      <label>
+        <input type="radio" name="use" value="projects">
+        For personal projects
+      </label>
+      <label>
+        <input type="radio" name="use" value="career">
+        To start a career in tech
+      </label>
+    </div>
+    <br>
+    <select id="use">
+      <option>For school</option>
+      <option>For personal projects</option>
+      <option>To start a career in tech</option>
+    </select>
     <button type="submit">Go!</button>
   </form>
+
   <br>
   <button type="button" class="hidden" id="reset">Reset</button>  
   <div id="results" class="hidden">
