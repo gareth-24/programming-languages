@@ -22,6 +22,9 @@ function handleRadio(event)  {
     console.log("C# desc");
     let cOutput = document.getElementById("c");
     cOutput.removeAttribute("class");
+  } else if (radioSelection === "other")  {
+    let generalResources = document.getElementById("general-resources");
+    generalResources.removeAttribute("class");
   }
 }
 function handleText(event) {
