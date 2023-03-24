@@ -12,8 +12,15 @@ function handleText(event) {
   console.log(userName);
   console.log(userEmail);
 }
+function handleAge(event) {
+  event.preventDefault();
+  const dob = document.getElementById("born").value;
+  console.log(dob);
+}
+
 
 window.addEventListener("load", function()  {
   document.getElementById("user-form").addEventListener("submit", handleRadio);
   document.getElementById("user-form").addEventListener("submit", handleText);
+  document.getElementById("user-form").addEventListener("submit", handleAge);
 });
