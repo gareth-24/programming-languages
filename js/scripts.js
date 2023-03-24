@@ -12,16 +12,16 @@ function handleRadio(event)  {
 
   if (radioSelection === "school")  {
     console.log("Python desc");
-    let python = document.getElementById("python");
-    python.removeAttribute("class");
+    let pythonOutput = document.getElementById("python");
+    pythonOutput.removeAttribute("class");
   } else if (radioSelection === "projects") {
     console.log("JavaScript desc");
-    let javascript = document.getElementById("javascript");
-    javascript.removeAttribute("class");
+    let javascriptOutput = document.getElementById("javascript");
+    javascriptOutput.removeAttribute("class");
   } else if (radioSelection === "career") {
     console.log("C# desc");
-    let c = document.getElementById("c");
-    c.removeAttribute("class");
+    let cOutput = document.getElementById("c");
+    cOutput.removeAttribute("class");
   }
 }
 function handleText(event) {
@@ -45,7 +45,6 @@ function handleAge(event) {
   const dob = document.getElementById("born").value;
   console.log(dob);
 }
-
 
 window.addEventListener("load", function()  {
   document.getElementById("user-form").addEventListener("submit", handleRadio);
